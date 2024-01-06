@@ -1,5 +1,11 @@
 # @rahulideas2it/fhir-ui
 
+## 0.0.3
+
+### Patch Changes
+
+- Css style has been changed
+
 ## 0.0.2
 
 ### Patch Changes
