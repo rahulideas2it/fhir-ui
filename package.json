@@ -1,6 +1,6 @@
 {
   "name": "fhir-ui",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "main": "dist/main.js",
@@ -37,11 +37,5 @@
   },
   "sideEffects": [
     "**/*.css"
-  ],
-  "publishConfig": {
-    "@rahulideas2it:registry": "https://npm.pkg.github.com"
-  },
-  "repository": {
-    "url": "https://github.com/rahulideas2it/fhir-ui.git"
-  }
+  ]
 }
