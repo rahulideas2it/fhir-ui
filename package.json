@@ -37,5 +37,11 @@
   },
   "sideEffects": [
     "**/*.css"
-  ]
+  ],
+  "publishConfig": {
+    "@rahulideas2it:registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "url": "https://github.com/rahulideas2it/fhir-ui.git"
+  }
 }
