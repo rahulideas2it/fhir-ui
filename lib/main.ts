@@ -1,2 +1,7 @@
-export { Button } from './components/Button'
-export { Input } from './components/Input'
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+
+export { Button } from './components/Button';
+export { Input } from './components/Input';
