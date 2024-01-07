@@ -1,10 +1,10 @@
-import react from '@vitejs/plugin-react'
-import { glob } from 'glob'
-import { fileURLToPath } from 'node:url'
-import { extname, relative, resolve } from 'path'
-import { defineConfig } from 'vite'
-import dts from 'vite-plugin-dts'
-import { libInjectCss } from 'vite-plugin-lib-inject-css'
+import react from '@vitejs/plugin-react';
+import { glob } from 'glob';
+import { fileURLToPath } from 'node:url';
+import { extname, relative, resolve } from 'path';
+import { defineConfig } from 'vite';
+import dts from 'vite-plugin-dts';
+import { libInjectCss } from 'vite-plugin-lib-inject-css';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -22,17 +22,17 @@ export default defineConfig({
           relative('lib', file.slice(0, file.length - extname(file).length)),
           // 2. The absolute path to the entry file
           // lib/nested/foo.ts becomes /project/lib/nested/foo.ts
-          fileURLToPath(new URL(file, import.meta.url)),
+          fileURLToPath(new URL(file, import.meta.url))
         ])
       ),
       output: {
         assetFileNames: 'assets/[name][extname]',
-        entryFileNames: '[name].js',
-      },
+        entryFileNames: '[name].js'
+      }
     },
     lib: {
       entry: resolve(__dirname, 'lib/main.ts'),
-      formats: ['es'],
-    },
-  },
-})
+      formats: ['es']
+    }
+  }
+});
